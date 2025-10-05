@@ -1,29 +1,35 @@
 import { useState } from 'react';
+import france from "../assets/france.jpeg";
+import tokyo from "../assets/tokyo.jpeg";
+import greece from "../assets/greece.jpeg";
+import bali from "../assets/bali.jpeg";
+import kyoto from "../assets/kyoto.jpg";
+
 
 function Gallery() {
   const photos = [
     {
-      url: '/public/france.jpeg',
+      url: france,
       title: 'Eiffel Tower at Sunset',
       location: 'Paris, France',
     },
     {
-      url: '/public/tokyo.jpeg',
+      url: tokyo,
       title: 'Cherry Blossoms in Spring',
       location: 'Tokyo, Japan',
     },
     {
-      url: '/public/greece.jpeg',
+      url: greece,
       title: 'Santorini Blue Domes',
       location: 'Santorini, Greece',
     },
     {
-      url: '/public/bali.jpeg',
+      url: bali,
       title: 'Rice Terraces',
       location: 'Bali, Indonesia',
     },
     {
-      url: '/public/kyoto.jpeg',
+      url: kyoto,
       title: 'Sunset Over the City',
       location: 'Kyoto, Japan',
     }
