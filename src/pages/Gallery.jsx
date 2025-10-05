@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import bali from '../public/bali.jpeg';
-import paris from '../public/france.jpeg';
-import greece from '../public/greece.jpeg';
-import tokyo from '../public/tokyo.jpeg';
-import kyoto from '../public/kyoto.jpg';
+import bali from '.../public/bali.jpeg';
+import paris from '.../public/france.jpeg';
+import greece from '.../public/greece.jpeg';
+import tokyo from '.../public/tokyo.jpeg';
+import kyoto from '.../public/kyoto.jpg';
 
 function Gallery() {
   const photos = [
