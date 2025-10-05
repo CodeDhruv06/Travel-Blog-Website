@@ -15,23 +15,6 @@ A modern, responsive travel diary built with React, Vite, and Tailwind CSS. It i
 - Tailwind CSS 3
 - React Router
 
-## Getting started
-
-Prerequisites: Node.js 18+ and npm.
-
-```powershell
-# from project root
-npm install
-npm run dev
-```
-
-Open the printed local URL (typically http://localhost:5173).
-
-### Build for production
-```powershell
-npm run build
-npm run preview
-```
 
 ## Project structure
 ```
@@ -59,42 +42,6 @@ npm run preview
 ## Styling notes
 - Tailwind is configured in `tailwind.config.js` and used via `src/index.css`.
 - The navbar supports both light and dark tones; adjust classes in `Navbar.jsx` to match your theme.
-
-## Deployment options
-
-### Vercel (recommended)
-- Import the GitHub repo in Vercel and deploy. Framework preset: Vite. Build command: `npm run build`. Output directory: `dist`.
-
-### Netlify
-- New site from Git -> pick this repo.
-- Build command: `npm run build`, Publish directory: `dist`.
-
-### GitHub Pages
-If deploying to `https://<username>.github.io/Travel-Blog-Website/`, set the base path in `vite.config.js`:
-
-```js
-// vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  plugins: [react()],
-  // IMPORTANT for GitHub Pages project sites
-  base: '/Travel-Blog-Website/',
-})
-```
-
-Then publish `dist/` using your preferred method (e.g., GitHub Actions, or `gh-pages`).
-
-Using `gh-pages` manually:
-```powershell
-npm install --save-dev gh-pages
-# add scripts to package.json
-#   "predeploy": "npm run build",
-#   "deploy": "gh-pages -d dist"
-
-npm run deploy
-```
 
 ## Troubleshooting
 - If Tailwind classes don’t apply, ensure `src/**/*.{js,jsx,ts,tsx}` is included in `tailwind.config.js` content.
