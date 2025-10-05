@@ -1,29 +1,34 @@
 import { useState } from 'react';
+import bali from '../assets/bali.jpeg';
+import paris from '../assets/france.jpeg';
+import greece from '../assets/greece.jpeg';
+import tokyo from '../assets/tokyo.jpeg';
+import kyoto from '../assets/kyoto.jpg';
 
 function Gallery() {
   const photos = [
     {
-      url: 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: {paris},
       title: 'Eiffel Tower at Sunset',
       location: 'Paris, France',
     },
     {
-      url: 'https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: {tokyo},
       title: 'Cherry Blossoms in Spring',
       location: 'Tokyo, Japan',
     },
     {
-      url: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: {greece},
       title: 'Santorini Blue Domes',
       location: 'Santorini, Greece',
     },
     {
-      url: 'https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: {bali},
       title: 'Rice Terraces',
       location: 'Bali, Indonesia',
     },
     {
-      url: 'https://wallpaperaccess.com/full/27059.jpg',
+      url: {kyoto},
       title: 'Sunset Over the City',
       location: 'Kyoto, Japan',
     }
@@ -119,7 +124,7 @@ function Gallery() {
             Photo {currentIndex + 1} of {photos.length}
           </p>
         </div>
-        
+
         <div className="mt-12 bg-white rounded-lg p-8 shadow-md">
           <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
             Capturing Memories
